@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "928692766284",
+    "project_id": "bigwon-gallery-80d21",
+    "storage_bucket": "bigwon-gallery-80d21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928692766284:android:4f6bc7e040355251ec96e9",
+        "android_client_info": {
+          "package_name": "com.bigwongallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928692766284-npbljo0bt6e9o37qto0rfcnks2nmmb4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bigwongallery",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "928692766284-1j3qjkgtpl4cq9cdremed4bmu3fsbq6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcYQfIhV8L_MxDn1tMQUJQHoAiqW_DP64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928692766284-1j3qjkgtpl4cq9cdremed4bmu3fsbq6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
