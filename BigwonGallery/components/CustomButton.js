@@ -32,7 +32,7 @@ CustomButton.defaultProps = {
 };
 
 const styles = StyleSheet.create({
-  block: {},
+  block: {borderRadius: 4, overflow: 'hidden'},
   wrapper: {
     borderRadius: 4,
     height: 48,
