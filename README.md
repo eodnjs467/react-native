@@ -1,5 +1,3 @@
-<img src="https://user-images.githubusercontent.com/24502604/155870209-b5a386bf-0e82-40ed-9f84-f492efaaf751.gif" width="350" height="700" />
-
 # react-native
  💫 react native 를 사용하여 앱 만들기 코드 테스트 및 학습
 
@@ -28,24 +26,57 @@
 # BigwonGallery
 ### 프로젝트 생성
 * react-native init
-* 사용 기능 : firebase, navigator, image-picker, vector-icons, …
+* 라이브러리 : firebase, navigator, image-picker, vector-icons, …
 
 ### 기능 목록
-* Screens
+* screens
 	* RootStack
-	* SignInScreen
-	* MainTab
-	* WelcomeScreen
-* Components
-	* BOrderedInput
+		* MainTab
+			* HomeStack
+				* FeedScreen
+				* ProfileScreen
+			* MyProfileStack
+				* MyProfileScreen
+				* PostScreen
+		* UploadScreen
+		* ModifyScreen
+		* SignInScreen
+		* WelcomeScreen
+* components
+	* ActionSheetModal
+	* Avatar
+	* BorderedInput
+	* CameraButton
 	* CustomButton
+	* IconRightButton
+	* PostCard
+	* PostGridItem
+	* Profile
 	* SetupProfile
 	* SignButton
 	* SignForm
-* Context
+	* UploadModeModal
+* context
 	* UserContext
+* hooks
+	* usePostAction
+	* usePosts
 * lib
 	* auth
+	* posts
 	* users
 * assets
-	* user
+	* user.png
+
+### 이슈
+1. ios에 firebase 적용 오류
+2. firebase 라이브러리 설치 후 빌더 오류
+3. firebase 이미지 업로드 후 출력 오류
+
+### 결과물
+
+<img src="https://user-images.githubusercontent.com/24502604/155870209-b5a386bf-0e82-40ed-9f84-f492efaaf751.gif" width="350" height="700" />
+
+# TodoApp
+
+# DayLog
