@@ -1,5 +1,8 @@
+<img src="https://user-images.githubusercontent.com/24502604/155870209-b5a386bf-0e82-40ed-9f84-f492efaaf751.gif" width="350" height="700" />
+
 # react-native
  💫 react native 를 사용하여 앱 만들기 코드 테스트 및 학습
+
 
 # 개발 환경
 
