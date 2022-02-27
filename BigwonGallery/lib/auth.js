@@ -5,6 +5,7 @@ export function signIn({email, password}) {
 }
 
 export function signUp({email, password}) {
+  console.log('email : ', email, ', password: ', password);
   return auth().createUserWithEmailAndPassword(email, password);
 }
 
