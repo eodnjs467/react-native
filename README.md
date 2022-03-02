@@ -19,9 +19,9 @@
 |자료|Google Search…|
 
 # index
-1. BigwonGallery
-2. TodoApp
-3. DayLog
+1. [BigwonGallery](#bigwongallery)
+2. [TodoApp](#todoapp)
+3. [DayLog](#daylog)
 
 # BigwonGallery
 ### 프로젝트 생성
@@ -69,9 +69,9 @@
 	* user.png
 
 ### 이슈
-1. ios에 firebase 적용 오류
-2. firebase 라이브러리 설치 후 빌더 오류
-3. firebase 이미지 업로드 후 출력 오류
+1. [ios에 firebase 적용 오류](https://github.com/eodnjs467/react-native/issues/1)
+2. [firebase 라이브러리 설치 후 빌더 오류](https://github.com/eodnjs467/react-native/issues/2)
+3. [firebase 이미지 업로드 후 출력 오류](https://github.com/eodnjs467/react-native/issues/3)
 
 ### 결과물
 
