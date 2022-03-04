@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {
   FlatList,
   StyleSheet,
   ActivityIndicator,
   RefreshControl,
 } from 'react-native';
-import {getNewerPosts, getOlderPosts, getPosts, PAGE_SIZE} from '../lib/posts';
 import PostCard from '../components/PostCard';
 import usePosts from '../hooks/usePosts';
 
