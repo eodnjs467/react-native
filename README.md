@@ -20,8 +20,9 @@
 
 # index
 1. [BigwonGallery](#bigwongallery)
-2. [TodoApp](#todoapp)
+2. [WeightSupport](#weightsupport)
 3. [DayLog](#daylog)
+4. [TodoApp](#todoapp)
 
 # BigwonGallery
 ### 프로젝트 생성
@@ -76,6 +77,19 @@
 ### 결과물
 
 <img src="https://user-images.githubusercontent.com/24502604/155870209-b5a386bf-0e82-40ed-9f84-f492efaaf751.gif" width="350" height="700" />
+
+# WeightSupport
+### 프로젝트 생성
+* react-native init
+* 라이브러리 : firebase, navigator, image-picker, vector-icons, …
+
+### 기능 목록
+* screens
+* components
+
+### 이슈
+
+### 결과물
 
 # TodoApp
 
