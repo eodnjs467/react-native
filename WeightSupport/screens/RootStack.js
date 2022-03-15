@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 
 function RootStack() {
   return (
-    <Stack.Navigator initialRouteName='TimeStack'>
+    <Stack.Navigator initialRouteName="SignIn">
       <Stack.Screen
         name="SignIn"
         component={SignInScreen}
@@ -19,7 +19,11 @@ function RootStack() {
         component={SelectMuscle}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="TimeStack" component={TimeStack} />
+      <Stack.Screen
+        name="TimeStack"
+        component={TimeStack}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 }

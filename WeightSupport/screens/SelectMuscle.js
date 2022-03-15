@@ -1,20 +1,22 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
-  Button,
+  View,
   StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
   FlatList,
+  Dimensions,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
 function SelectMuscle() {
   const [selectedId, setSelectedId] = useState(null);
   const [weightList, setWeightList] = useState([
-    {id: 1, title: '등', checkYn: false},
+    {id: 1, title: '등', checkYn: true},
     {id: 2, title: '가슴', checkYn: false},
     {id: 3, title: '어깨', checkYn: false},
     {id: 4, title: '하체', checkYn: false},
@@ -22,16 +24,23 @@ function SelectMuscle() {
   ]);
   const navigation = useNavigation();
 
-  const WeightItem = ({item, onPress, backgroundColor, textColor, checkYn}) => (
+  const WeightItem = ({item, onPress, backgroundColor, textColor}) => (
     <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
-      <Text style={[styles.title, textColor]}>{item.title}</Text>
+      <View style={{flex: 0.4, flexDirection: 'row-reverse'}}>
+        {item.id === selectedId ? <Icon name="check" size={25} /> : null}
+      </View>
+      <View style={{marginLeft: 10}}>
+        <Text style={[styles.title, textColor]}>{item.title}</Text>
+      </View>
       {/* <Text>{console.info(weightList)}</Text> */}
     </TouchableOpacity>
   );
 
-  const renderItem = ({item, checkYn}) => {
-    const backgroundColor = item.id === selectedId ? '#6e3b6e' : 'aquamarine';
-    const color = item.id === selectedId ? 'white' : 'black';
+  const renderItem = ({item}) => {
+    const backgroundColor = item.id === selectedId ? 'lightgray' : 'gray';
+    const color = item.id === selectedId ? 'black' : 'white';
+    // const backgroundColor = item.checkYn === true ? 'lightgray' : 'gray';
+    // const color = item.checkYn === true ? 'black' : 'white';
     return (
       <WeightItem
         item={item}
@@ -54,31 +63,53 @@ function SelectMuscle() {
         renderItem={renderItem}
         keyExtractor={item => item.id}
         extraData={selectedId}
+        style={styles.block}
       />
-      <Button title="next" onPress={onPressButton} />
+      <Pressable style={styles.button} onPress={onPressButton}>
+        <Text style={styles.buttonText}>Next</Text>
+      </Pressable>
     </SafeAreaView>
   );
 }
 
+const chartWidth = Dimensions.get('window').width;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightslategrey',
+    backgroundColor: 'dimgray',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    marginTop: StatusBar.currentHeight || 0,
+  },
+  block: {
+    marginTop: '20%',
   },
   item: {
-    width: 314,
-    height: 24,
-    backgroundColor: 'aquamarine',
-    marginVertical: 8,
-    marginHorizontal: 16,
-    borderRadius: 16,
+    width: chartWidth,
+    height: 50,
+    backgroundColor: 'gray',
+    borderWidth: 1,
+    borderColor: 'green',
+    flexDirection: 'row',
+    paddingLeft: 20,
+    marginBottom: 10,
+    alignItems: 'center',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  button: {
+    width: '70%',
+    height: 50,
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '70%',
+  },
+  buttonText: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
 
